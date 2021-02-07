@@ -1,0 +1,29 @@
+{
+  "name": "lab-7",
+  "version": "1.0.0",
+  "description": "Lab 7 Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "prod": "npm run build && npm start",
+    "start": "node ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --exec ts-node -- ./src/server.ts"
+  },
+  "author": "Samir Shah 10445681",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/mongodb": "^3.5.14",
+    "@types/node": "^13.13.4",
+    "nodemon": "^2.0.3",
+    "tsc-node": "0.0.3",
+    "typescript": "^3.8.3"
+  }
+}
